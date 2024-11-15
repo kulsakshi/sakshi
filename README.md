@@ -21,3 +21,7 @@ print("Changes committed to Git.")
 13.git log
 14.git remote add origin https://github.com/your-username/my-python-project.git
 15. git push -u origin master
+
+
+slip2.2
+
