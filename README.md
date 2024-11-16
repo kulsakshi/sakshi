@@ -64,19 +64,8 @@ print("Hello, Git!")
 9.git commit -m "Devops" https://github.com/your-username/my-git-project.git
 10.git push -u origin master
 11.git checkout -b feature-branch
+12.git checkout -b feature-branch
 12.notepad main.py
-#code to update
-print("Feature branch changes")
-13.git add main.py
-14.git commit -m "Added feature branch changes"
-15.git push -u origin feature-branch
-16.git checkout master
-17.git merge feature-branch
-18.git push origin master
-19.git log
-20.git log --oneline
-21.git log --graph --oneline
-
 bitbucket
 ##bitbucket Create a simple project, push it to a remote repository on BitBucket, and create a
 new branch. Merge this branch into the main branch and display a chronological
