@@ -61,7 +61,7 @@ print("Hello, Git!")
 6.git status
 7.git add main.py
 8.git commit -m "Devops"
-9.git remote add origin https://github.com/your-username/my-git-project.git
+9.git commit -m "Devops" https://github.com/your-username/my-git-project.git
 10.git push -u origin master
 11.git checkout -b feature-branch
 12.notepad main.py
