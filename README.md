@@ -77,4 +77,45 @@ print("Feature branch changes")
 20.git log --oneline
 21.git log --graph --oneline
 
+bitbucket
+##bitbucket Create a simple project, push it to a remote repository on BitBucket, and create a
+new branch. Merge this branch into the main branch and display a chronological
+history of commits.
+# Step 2: Set Up a New Git Repository Locally
+cd path/to/your/directory
+mkdir my-simple-project
+cd my-simple-project
+git init
 
+# Step 3: Create a Simple File
+echo "# My Simple Project" > README.md
+git status
+git add README.md
+git commit -m "Initial commit: Added README.md"
+
+# Step 4: Push the Project to Bitbucket
+git remote add origin https://YOUR_USERNAME@bitbucket.org/YOUR_USERNAME/YOUR_REPO_NAME.git
+git branch -M main
+git push -u origin main
+
+# Step 5: Create a New Branch
+git checkout -b feature-branch
+echo "This is a feature update." >> README.md
+git status
+git add README.md
+git commit -m "Added a feature update"
+git push -u origin feature-branch
+
+# Step 6: Merge the Branch into Main
+git checkout main
+git pull origin main
+git merge feature-branch
+git push origin main
+
+# Step 7: View the Commit History
+git log --oneline
+git log --graph --oneline --all
+
+# Step 8: Clean Up (Optional)
+git branch -d feature-branch
+git push origin --delete feature-branch
